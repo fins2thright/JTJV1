@@ -11,7 +11,7 @@ public class FlashlightBehaviors : GrabbableEvents
     public override void OnGrab(Grabber grabber)
     {
        
-        Debug.Log("Flashlight Picked Up");
+        //Debug.Log("Flashlight Picked Up");
         GameObject flashlight = GameObject.Find("/Flashlight/WhiteLight");
         Light light = flashlight.GetComponent(typeof(Light)) as Light;
         light.intensity = 2.1f;
@@ -21,7 +21,7 @@ public class FlashlightBehaviors : GrabbableEvents
     public override void OnRelease()
     {
         
-        Debug.Log("Flashlight Released");
+        //Debug.Log("Flashlight Released");
         GameObject flashlight = GameObject.Find("/Flashlight/WhiteLight");
         Light light = flashlight.GetComponent(typeof(Light)) as Light;
         light.intensity = 0.0f;
